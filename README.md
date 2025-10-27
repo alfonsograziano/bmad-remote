@@ -23,3 +23,27 @@ This is an **experimental and exploratory project** focused on discovery and pro
 - Model Context Protocol (MCP) - Integration layer
 - Custom BMAD agent and workflows - Synchronization logic
 
+## Getting Started
+
+To start using this extension, you need to configure your connection to your project management tool.
+
+### Step 1: Add MCP Server for Your Project Management Tool
+
+Configure the Model Context Protocol (MCP) server for your chosen project management tool. For Jira, use the official Atlassian MCP server:
+
+- **Jira (Atlassian)**: [atlassian-mcp-server](https://github.com/atlassian/atlassian-mcp-server)
+- Follow the setup instructions in the repository to connect your IDE/client to your Atlassian Cloud instance
+
+For other project management tools (Linear, Asana, etc.), find or create an appropriate MCP server for that tool.
+
+### Step 2: Configure Project Management Tool Information
+
+Update the `docs/PM_TOOL.md` file with your specific project management tool configuration:
+
+- Tool name and MCP server identifier
+- Your name as the primary assignee
+- Board URLs and project keys you work with
+- Base URL and instance information
+
+These configurations will be used by the BMAD development workflows to keep everything synchronized between your local workspace and the remote project management tool.
+
